@@ -1,14 +1,17 @@
 <link rel="stylesheet" href="style.css">
-<nav>
+<nav class="nav">
   <span class="nav-name">Maia Pouso</span>
-  <div class="nav-links">
-    <a onclick="goTo('servicios')">Servicios</a>
-    <a onclick="goTo('proyectos')">Proyectos</a>
-    <a onclick="goTo('skills')">Skills</a>
-    <a onclick="goTo('contacto')">Contacto</a>
+  <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a data-target="servicios" onclick="goTo('servicios')">Servicios</a>
+    <a data-target="proyectos" onclick="goTo('proyectos')">Proyectos</a>
+    <a data-target="skills" onclick="goTo('skills')">Skills</a>
+    <a data-target="contacto" onclick="goTo('contacto')">Contacto</a>
   </div>
   <button class="nav-btn" onclick="goTo('contacto')">Hablemos</button>
 </nav>
+
+<main class="site-main">
 
 <section class="hero" id="inicio">
   <div class="hero-chip"><span class="hero-chip-dot"></span>Disponible para proyectos remotos · Argentina</div>
@@ -117,10 +120,7 @@
       <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
     </div>
 
-    <div class="add-btn-row" onclick="openModal()">
-      <i class="ti ti-plus" aria-hidden="true"></i>
-      <span>Agregar proyecto</span>
-    </div>
+  
   </div>
 </section>
 
@@ -182,45 +182,34 @@
   <div class="contact-hero">
     <h3>Trabajemos juntos</h3>
     <p>Si necesitás automatizar un proceso, crear una app para tu negocio o un sitio web que convierta, estoy disponible. Sin vueltas, directo al problema.</p>
+    <div class="contact-actions" aria-hidden="false">
+      <a class="contact-action" href="https://linkedin.com/in/maia-pouso" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.1 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v14h-4zM8.5 8h3.8v2h.06c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.08V22h-4v-6.38c0-1.52-.03-3.48-2.12-3.48-2.12 0-2.44 1.65-2.44 3.37V22h-4z"/></svg>
+      </a>
+      <a class="contact-action" href="mailto:" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 4h20v16H2z" fill="none"/><path d="M22 6v12H2V6h20m0-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM4 8.5l8 5 8-5V8l-8 5-8-5v.5z"/></svg>
+      </a>
+      <a class="contact-action" href="mailto:?subject=Consulta%20desde%20sitio" aria-label="Mensaje">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 2H4a2 2 0 0 0-2 2v16l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM6 11h12v2H6v-2zm10-4H6v2h10V7z"/></svg>
+      </a>
+    </div>
     <button class="btn-white" onclick="sendPrompt('Quiero contratar a Maia Pouso para un proyecto de automatización con IA. ¿Cómo armo la consulta inicial? ↗')">Enviar consulta ↗</button>
   </div>
 
-  <div class="contact-cards">
-    <div class="cc">
-      <div class="cc-icon"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></div>
-      <div>
-        <div class="cc-lbl">LinkedIn</div>
-        <div class="cc-val">linkedin.com/in/maia-pouso</div>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
-      <div>
-        <div class="cc-lbl">Email</div>
-        <div class="cc-val">Disponible por LinkedIn</div>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-icon"><i class="ti ti-map-pin" aria-hidden="true"></i></div>
-      <div>
-        <div class="cc-lbl">Ubicación</div>
-        <div class="cc-val">Argentina · Remoto</div>
-      </div>
-    </div>
-    <div class="cc">
-      <div class="cc-icon"><i class="ti ti-clock" aria-hidden="true"></i></div>
-      <div>
-        <div class="cc-lbl">Respuesta</div>
-        <div class="cc-val">Menos de 24 horas</div>
-      </div>
-    </div>
-  </div>
+  
 </section>
 
-<footer>
-  <span style="font-size:13px;font-weight:600;color:var(--ink);">Maia Pouso</span>
-  <span>© 2026 · Desarrolladora web &amp; automatización con IA</span>
+<footer class="site-footer">
+  <div class="footer-left">
+    <span class="footer-name">Maia Pouso</span>
+    <span class="footer-role">Desarrolladora web · Automatización con IA</span>
+  </div>
+  <div class="footer-right">
+    <span>© 2026 Maia Pouso. Todos los derechos reservados.</span>
+  </div>
 </footer>
+
+</main>
 
 <div class="modal-wrap" id="modal">
   <div class="modal">
