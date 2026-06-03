@@ -1,285 +1,226 @@
-<link rel="stylesheet" href="style.css">
-<nav class="nav">
-  <span class="nav-name">Maia Pouso</span>
-  <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
-  <div class="nav-links" id="navLinks">
-    <a data-target="servicios" onclick="goTo('servicios')">Servicios</a>
-    <a data-target="proyectos" onclick="goTo('proyectos')">Proyectos</a>
-    <a data-target="skills" onclick="goTo('skills')">Skills</a>
-    <a data-target="contacto" onclick="goTo('contacto')">Contacto</a>
-  </div>
-  <button class="nav-btn" onclick="goTo('contacto')">Hablemos</button>
-</nav>
-
-<main class="site-main">
-
-<section class="hero" id="inicio">
-  <div class="hero-chip"><span class="hero-chip-dot"></span>Disponible para proyectos remotos · Argentina</div>
-  <h1 class="hero-title">
-    Automatizo procesos<br>
-    <span class="line2">con inteligencia artificial.</span>
-  </h1>
-  <p class="hero-sub">
-    Soy Maia, desarrolladora web freelance. Construyo <strong>apps a medida, flujos de automatización y soluciones con IA</strong> que reemplazan tareas manuales, mejoran la experiencia del cliente y hacen crecer tu negocio.
-  </p>
-  <div class="hero-btns">
-    <button class="btn-dark" onclick="goTo('proyectos')">Ver proyectos</button>
-    <button class="btn-outline" onclick="goTo('contacto')">Contactarme</button>
-  </div>
-  <div class="hero-metrics">
-    <div class="metric">
-      <span class="metric-num">3+</span>
-      <span class="metric-lbl">Proyectos entregados</span>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Maia Pouso — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <span class="nav-name">Maia Pouso</span>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a data-target="servicios" onclick="goTo('servicios')">Servicios</a>
+      <a data-target="proyectos" onclick="goTo('proyectos')">Proyectos</a>
+      <a data-target="skills" onclick="goTo('skills')">Skills</a>
+      <a data-target="contacto" onclick="goTo('contacto')">Contacto</a>
     </div>
-    <div class="metric">
-      <span class="metric-num">IA</span>
-      <span class="metric-lbl">Integración en cada solución</span>
-    </div>
-    <div class="metric">
-      <span class="metric-num">100%</span>
-      <span class="metric-lbl">Remoto · ARG</span>
-    </div>
-  </div>
-</section>
+    <button class="nav-btn" onclick="goTo('contacto')">Hablemos</button>
+  </nav>
 
-<section id="servicios">
-  <p class="sec-eyebrow">Lo que hago</p>
-  <h2 class="sec-title">Soluciones a medida</h2>
-  <p class="sec-desc">Cada proyecto arranca desde un problema real. Diseño, codifico e integro IA para que tu negocio funcione mejor, sin depender de procesos manuales.</p>
+  <main class="site-main">
 
-  <div class="services-row">
-    <div class="service-card">
-      <i class="ti ti-robot svc-icon" aria-hidden="true"></i>
-      <div class="svc-name">Automatización con IA</div>
-      <div class="svc-desc">Flujos inteligentes que reemplazan tareas repetitivas. Atención al cliente, recordatorios, reportes y más, sin intervención humana.</div>
+  <section class="hero" id="inicio">
+    <div class="hero-chip"><span class="hero-chip-dot"></span>Disponible para proyectos remotos · Argentina</div>
+    <h1 class="hero-title">
+      Automatizo procesos<br>
+      <span class="line2">con inteligencia artificial.</span>
+    </h1>
+    <p class="hero-sub">
+      Soy Maia, desarrolladora web freelance. Construyo <strong>apps a medida, flujos de automatización y soluciones con IA</strong> que reemplazan tareas manuales, mejoran la experiencia del cliente y hacen crecer tu negocio.
+    </p>
+    <div class="hero-btns">
+      <button class="btn-dark" onclick="goTo('proyectos')">Ver proyectos</button>
+      <button class="btn-outline" onclick="goTo('contacto')">Contactarme</button>
     </div>
-    <div class="service-card">
-      <i class="ti ti-apps svc-icon" aria-hidden="true"></i>
-      <div class="svc-name">Apps a medida</div>
-      <div class="svc-desc">Sistemas de turnos, fidelización de clientes y gestión operativa. Desarrolladas con IA coworking y desplegadas en producción.</div>
-    </div>
-    <div class="service-card">
-      <i class="ti ti-world svc-icon" aria-hidden="true"></i>
-      <div class="svc-name">Sitios web</div>
-      <div class="svc-desc">Páginas rápidas, optimizadas y con identidad propia. Desde landing pages hasta sitios con integración de herramientas digitales.</div>
-    </div>
-  </div>
-</section>
 
-<section id="proyectos">
-  <p class="sec-eyebrow">Proyectos destacados</p>
-  <h2 class="sec-title">Trabajo real, resultados reales</h2>
-  <p class="sec-desc">Apps y soluciones construidas para negocios reales. Hacé clic en cada proyecto para ver detalles.</p>
+    <div class="hero-metrics">
+      <div class="metric">
+        <span class="metric-num">3+</span>
+        <span class="metric-lbl">Proyectos entregados</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">IA</span>
+        <span class="metric-lbl">Integración en cada solución</span>
+      </div>
+      <div class="metric">
+        <span class="metric-num">100%</span>
+        <span class="metric-lbl">Remoto · ARG</span>
+      </div>
+    </div>
+  </section>
 
-  <div class="projects-stack" id="proj-list">
-    <div class="proj-row">
-      <div>
-        <span class="proj-tag t-ia">IA · App</span>
-        <div class="proj-name">Sistema de fidelización con IA — Estética</div>
-        <div class="proj-desc">App móvil con sistema de puntos, membresía premium y perfil de cliente por DNI. IA integrada para recordatorios automáticos, atención y gestión de turnos. Desplegada en Vercel.</div>
-        <div class="proj-pills">
-          <span class="pill">JavaScript</span><span class="pill">Vercel</span><span class="pill">IA Coworking</span><span class="pill">UX/UI</span>
+  <section id="servicios">
+    <p class="sec-eyebrow">Lo que hago</p>
+    <h2 class="sec-title">Soluciones a medida</h2>
+    <p class="sec-desc">Cada proyecto arranca desde un problema real. Diseño, codifico e integro IA para que tu negocio funcione mejor, sin depender de procesos manuales.</p>
+
+    <div class="services-row">
+      <div class="service-card">
+        <i class="ti ti-robot svc-icon" aria-hidden="true"></i>
+        <div class="svc-name">Automatización con IA</div>
+        <div class="svc-desc">Flujos inteligentes que reemplazan tareas repetitivas. Atención al cliente, recordatorios, reportes y más, sin intervención humana.</div>
+      </div>
+      <div class="service-card">
+        <i class="ti ti-apps svc-icon" aria-hidden="true"></i>
+        <div class="svc-name">Apps a medida</div>
+        <div class="svc-desc">Sistemas de turnos, fidelización de clientes y gestión operativa. Desarrolladas con IA coworking y desplegadas en producción.</div>
+      </div>
+      <div class="service-card">
+        <i class="ti ti-world svc-icon" aria-hidden="true"></i>
+        <div class="svc-name">Sitios web</div>
+        <div class="svc-desc">Páginas rápidas, optimizadas y con identidad propia. Desde landing pages hasta sitios con integración de herramientas digitales.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <p class="sec-eyebrow">Proyectos destacados</p>
+    <h2 class="sec-title">Trabajo real, resultados reales</h2>
+    <p class="sec-desc">Apps y soluciones construidas para negocios reales.</p>
+
+    <div class="projects-stack" id="proj-list">
+      <div class="proj-row">
+        <div>
+          <span class="proj-tag t-ia">IA · App</span>
+          <div class="proj-name">Sistema de fidelización con IA — Estética</div>
+          <div class="proj-desc">App móvil con sistema de puntos, membresía premium y perfil de cliente por DNI. IA integrada para recordatorios automáticos, atención y gestión de turnos. Desplegada en Vercel.</div>
+          <div class="proj-pills">
+            <span class="pill">JavaScript</span><span class="pill">Vercel</span><span class="pill">IA Coworking</span><span class="pill">UX/UI</span>
+          </div>
+        </div>
+        <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
+      </div>
+
+      <div class="proj-row">
+        <div>
+          <span class="proj-tag t-ia">IA · Turnero</span>
+          <div class="proj-name">Sistema de turnos automatizado</div>
+          <div class="proj-desc">Módulo de agendamiento con confirmación automática por mensaje, recordatorios programados y panel de gestión para el negocio. Sin intervención manual del equipo.</div>
+          <div class="proj-pills">
+            <span class="pill">Node.js</span><span class="pill">IA Coworking</span><span class="pill">Automatización</span><span class="pill">API integration</span>
+          </div>
+        </div>
+        <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
+      </div>
+
+      <div class="proj-row">
+        <div>
+          <span class="proj-tag t-web">Web</span>
+          <div class="proj-name">Página web — Centro de estética</div>
+          <div class="proj-desc">Desarrollo freelance completo: diseño, código y despliegue. Identidad visual de marca respetada, optimización de rendimiento y gestión con Git/GitHub.</div>
+          <div class="proj-pills">
+            <span class="pill">HTML/CSS</span><span class="pill">JavaScript</span><span class="pill">Git</span><span class="pill">SEO</span>
+          </div>
+        </div>
+        <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
+      </div>
+
+      <div class="proj-row">
+        <div>
+          <span class="proj-tag t-web">Web · Personal</span>
+          <div class="proj-name">Sitio web — Influencer Julieta Bostal</div>
+          <div class="proj-desc">Página personalizada con identidad visual alineada a su nicho y presencia en redes. Diseño coherente con logo y branding existente.</div>
+          <div class="proj-pills">
+            <span class="pill">HTML/CSS</span><span class="pill">JavaScript</span><span class="pill">UX/UI</span>
+          </div>
+        </div>
+        <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <p class="sec-eyebrow">Herramientas</p>
+    <h2 class="sec-title">Stack técnico</h2>
+    <p class="sec-desc">Las tecnologías y metodologías que uso para construir soluciones sólidas.</p>
+
+    <div class="skills-grid">
+      <div class="sk-group">
+        <div class="sk-title"><i class="ti ti-code" aria-hidden="true"></i>Desarrollo web</div>
+        <div class="sk-chips">
+          <span class="sk-chip">HTML / CSS</span>
+          <span class="sk-chip">JavaScript</span>
+          <span class="sk-chip">Node.js</span>
+          <span class="sk-chip">Git / GitHub</span>
+          <span class="sk-chip">Vercel</span>
+          <span class="sk-chip">UX/UI básico</span>
         </div>
       </div>
-      <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
-    </div>
-
-    <div class="proj-row">
-      <div>
-        <span class="proj-tag t-ia">IA · Turnero</span>
-        <div class="proj-name">Sistema de turnos automatizado</div>
-        <div class="proj-desc">Módulo de agendamiento con confirmación automática por mensaje, recordatorios programados y panel de gestión para el negocio. Sin intervención manual del equipo.</div>
-        <div class="proj-pills">
-          <span class="pill">Node.js</span><span class="pill">IA Coworking</span><span class="pill">Automatización</span><span class="pill">API integration</span>
+      <div class="sk-group">
+        <div class="sk-title"><i class="ti ti-robot" aria-hidden="true"></i>IA &amp; Automatización</div>
+        <div class="sk-chips">
+          <span class="sk-chip">IA Coworking</span>
+          <span class="sk-chip">Automatización de flujos</span>
+          <span class="sk-chip">Integración de APIs</span>
+          <span class="sk-chip">Prompt engineering</span>
+          <span class="sk-chip">Apps con IA</span>
         </div>
       </div>
-      <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
-    </div>
-
-    <div class="proj-row">
-      <div>
-        <span class="proj-tag t-web">Web</span>
-        <div class="proj-name">Página web — Centro de estética</div>
-        <div class="proj-desc">Desarrollo freelance completo: diseño, código y despliegue. Identidad visual de marca respetada, optimización de rendimiento y gestión con Git/GitHub.</div>
-        <div class="proj-pills">
-          <span class="pill">HTML/CSS</span><span class="pill">JavaScript</span><span class="pill">Git</span><span class="pill">SEO</span>
+      <div class="sk-group">
+        <div class="sk-title"><i class="ti ti-chart-bar" aria-hidden="true"></i>Marketing digital</div>
+        <div class="sk-chips">
+          <span class="sk-chip">Community Management</span>
+          <span class="sk-chip">Meta Ads</span>
+          <span class="sk-chip">Contenido vertical</span>
+          <span class="sk-chip">SEO básico</span>
+          <span class="sk-chip">Edición audiovisual</span>
         </div>
       </div>
-      <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
-    </div>
-
-    <div class="proj-row">
-      <div>
-        <span class="proj-tag t-web">Web · Personal</span>
-        <div class="proj-name">Sitio web — Influencer Julieta Bostal</div>
-        <div class="proj-desc">Página personalizada con identidad visual alineada a su nicho y presencia en redes. Diseño coherente con logo y branding existente.</div>
-        <div class="proj-pills">
-          <span class="pill">HTML/CSS</span><span class="pill">JavaScript</span><span class="pill">UX/UI</span>
+      <div class="sk-group">
+        <div class="sk-title"><i class="ti ti-bulb" aria-hidden="true"></i>Perfil profesional</div>
+        <div class="sk-chips">
+          <span class="sk-chip">Resolución de problemas</span>
+          <span class="sk-chip">Trabajo autónomo</span>
+          <span class="sk-chip">Entrega iterativa</span>
+          <span class="sk-chip">Comunicación clara</span>
+          <span class="sk-chip">Adaptabilidad</span>
         </div>
       </div>
-      <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
     </div>
+  </section>
 
-  
-  </div>
-</section>
+  <section id="contacto">
+    <p class="sec-eyebrow">Contacto</p>
+    <h2 class="sec-title">¿Tenés un problema que resolver?</h2>
+    <p class="sec-desc">Contame tu idea. En menos de 24 hs te respondo con una propuesta clara.</p>
 
-<section id="skills">
-  <p class="sec-eyebrow">Herramientas</p>
-  <h2 class="sec-title">Stack técnico</h2>
-  <p class="sec-desc">Las tecnologías y metodologías que uso para construir soluciones sólidas.</p>
-
-  <div class="skills-grid">
-    <div class="sk-group">
-      <div class="sk-title"><i class="ti ti-code" aria-hidden="true"></i>Desarrollo web</div>
-      <div class="sk-chips">
-        <span class="sk-chip">HTML / CSS</span>
-        <span class="sk-chip">JavaScript</span>
-        <span class="sk-chip">Node.js</span>
-        <span class="sk-chip">Git / GitHub</span>
-        <span class="sk-chip">Vercel</span>
-        <span class="sk-chip">UX/UI básico</span>
+    <div class="contact-hero">
+      <h3>Trabajemos juntos</h3>
+      <p>Si necesitás automatizar un proceso, crear una app para tu negocio o un sitio web que convierta, estoy disponible. Sin vueltas, directo al problema.</p>
+      <div class="contact-actions" aria-hidden="false">
+        <a class="contact-action" href="https://linkedin.com/in/maia-pouso" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.1 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v14h-4zM8.5 8h3.8v2h.06c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.08V22h-4v-6.38c0-1.52-.03-3.48-2.12-3.48-2.12 0-2.44 1.65-2.44 3.37V22h-4z"/></svg>
+        </a>
+        <a class="contact-action" href="mailto:" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 4h20v16H2z" fill="none"/><path d="M22 6v12H2V6h20m0-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM4 8.5l8 5 8-5V8l-8 5-8-5v.5z"/></svg>
+        </a>
+        <a class="contact-action" href="mailto:?subject=Consulta%20desde%20sitio" aria-label="Mensaje">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 2H4a2 2 0 0 0-2 2v16l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM6 11h12v2H6v-2zm10-4H6v2h10V7z"/></svg>
+        </a>
       </div>
+      <button class="btn-white" onclick="goTo('contacto')">Enviar consulta ↗</button>
     </div>
-    <div class="sk-group">
-      <div class="sk-title"><i class="ti ti-robot" aria-hidden="true"></i>IA &amp; Automatización</div>
-      <div class="sk-chips">
-        <span class="sk-chip">IA Coworking</span>
-        <span class="sk-chip">Automatización de flujos</span>
-        <span class="sk-chip">Integración de APIs</span>
-        <span class="sk-chip">Prompt engineering</span>
-        <span class="sk-chip">Apps con IA</span>
-      </div>
+
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <span class="footer-name">Maia Pouso</span>
+      <span class="footer-role">Desarrolladora web · Automatización con IA</span>
     </div>
-    <div class="sk-group">
-      <div class="sk-title"><i class="ti ti-chart-bar" aria-hidden="true"></i>Marketing digital</div>
-      <div class="sk-chips">
-        <span class="sk-chip">Community Management</span>
-        <span class="sk-chip">Meta Ads</span>
-        <span class="sk-chip">Contenido vertical</span>
-        <span class="sk-chip">SEO básico</span>
-        <span class="sk-chip">Edición audiovisual</span>
-      </div>
+    <div class="footer-right">
+      <span>© 2026 Maia Pouso. Todos los derechos reservados.</span>
     </div>
-    <div class="sk-group">
-      <div class="sk-title"><i class="ti ti-bulb" aria-hidden="true"></i>Perfil profesional</div>
-      <div class="sk-chips">
-        <span class="sk-chip">Resolución de problemas</span>
-        <span class="sk-chip">Trabajo autónomo</span>
-        <span class="sk-chip">Entrega iterativa</span>
-        <span class="sk-chip">Comunicación clara</span>
-        <span class="sk-chip">Adaptabilidad</span>
-      </div>
-    </div>
-  </div>
-</section>
+  </footer>
 
-<section id="contacto">
-  <p class="sec-eyebrow">Contacto</p>
-  <h2 class="sec-title">¿Tenés un problema que resolver?</h2>
-  <p class="sec-desc">Contame tu idea. En menos de 24 hs te respondo con una propuesta clara.</p>
+  </main>
 
-  <div class="contact-hero">
-    <h3>Trabajemos juntos</h3>
-    <p>Si necesitás automatizar un proceso, crear una app para tu negocio o un sitio web que convierta, estoy disponible. Sin vueltas, directo al problema.</p>
-    <div class="contact-actions" aria-hidden="false">
-      <a class="contact-action" href="https://linkedin.com/in/maia-pouso" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4.98 3.5C4.98 4.88 3.9 6 2.5 6S0 4.88 0 3.5 1.1 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4v14h-4zM8.5 8h3.8v2h.06c.53-1 1.82-2.06 3.74-2.06 4 0 4.74 2.64 4.74 6.08V22h-4v-6.38c0-1.52-.03-3.48-2.12-3.48-2.12 0-2.44 1.65-2.44 3.37V22h-4z"/></svg>
-      </a>
-      <a class="contact-action" href="mailto:" aria-label="Email">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 4h20v16H2z" fill="none"/><path d="M22 6v12H2V6h20m0-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM4 8.5l8 5 8-5V8l-8 5-8-5v.5z"/></svg>
-      </a>
-      <a class="contact-action" href="mailto:?subject=Consulta%20desde%20sitio" aria-label="Mensaje">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 2H4a2 2 0 0 0-2 2v16l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM6 11h12v2H6v-2zm10-4H6v2h10V7z"/></svg>
-      </a>
-    </div>
-    <button class="btn-white" onclick="sendPrompt('Quiero contratar a Maia Pouso para un proyecto de automatización con IA. ¿Cómo armo la consulta inicial? ↗')">Enviar consulta ↗</button>
-  </div>
-
-  
-</section>
-
-<footer class="site-footer">
-  <div class="footer-left">
-    <span class="footer-name">Maia Pouso</span>
-    <span class="footer-role">Desarrolladora web · Automatización con IA</span>
-  </div>
-  <div class="footer-right">
-    <span>© 2026 Maia Pouso. Todos los derechos reservados.</span>
-  </div>
-</footer>
-
-</main>
-
-<div class="modal-wrap" id="modal">
-  <div class="modal">
-    <button class="modal-x" onclick="closeModal()"><i class="ti ti-x"></i></button>
-    <h4>Nuevo proyecto</h4>
-    <div class="f">
-      <label>Nombre</label>
-      <input type="text" id="pN" placeholder="Ej: Turnero para clínica dental">
-    </div>
-    <div class="f">
-      <label>Tipo</label>
-      <select id="pT">
-        <option value="t-ia">IA · App</option>
-        <option value="t-ia">IA · Automatización</option>
-        <option value="t-ia">IA · Turnero</option>
-        <option value="t-web">Web · Freelance</option>
-        <option value="t-cm">Community Management</option>
-      </select>
-    </div>
-    <div class="f">
-      <label>Descripción</label>
-      <textarea id="pD" placeholder="¿Qué problema resolviste? ¿Qué impacto tuvo?"></textarea>
-    </div>
-    <div class="f">
-      <label>Tecnologías (separadas por comas)</label>
-      <input type="text" id="pS" placeholder="JavaScript, IA Coworking, Vercel">
-    </div>
-    <div class="modal-btns">
-      <button class="btn-cancel" onclick="closeModal()">Cancelar</button>
-      <button class="btn-add" onclick="addProj()">Agregar</button>
-    </div>
-  </div>
-</div>
-
-<script>
-function goTo(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});}
-function openModal(){document.getElementById('modal').classList.add('open');}
-function closeModal(){document.getElementById('modal').classList.remove('open');}
-document.getElementById('modal').addEventListener('click',function(e){if(e.target===this)closeModal();});
-
-const tagLabel={'t-ia':'IA · App','t-web':'Web','t-cm':'Community Management'};
-
-function addProj(){
-  const n=document.getElementById('pN').value.trim();
-  const t=document.getElementById('pT').value;
-  const d=document.getElementById('pD').value.trim();
-  const s=document.getElementById('pS').value.trim();
-  if(!n||!d)return;
-
-  const pills=s?s.split(',').map(x=>`<span class="pill">${x.trim()}</span>`).join(''):'';
-  const tag=tagLabel[t]||'Proyecto';
-
-  const row=document.createElement('div');
-  row.className='proj-row';
-  row.innerHTML=`
-    <div>
-      <span class="proj-tag ${t}">${tag}</span>
-      <div class="proj-name">${n}</div>
-      <div class="proj-desc">${d}</div>
-      <div class="proj-pills">${pills}</div>
-    </div>
-    <i class="ti ti-arrow-up-right proj-arrow" aria-hidden="true"></i>
-  `;
-
-  const addBtn=document.querySelector('.add-btn-row');
-  addBtn.parentNode.insertBefore(row,addBtn);
-  document.getElementById('pN').value='';
-  document.getElementById('pD').value='';
-  document.getElementById('pS').value='';
-  closeModal();
-}
-</script>
-<script src="main.js" defer></script>
+  <script>
+  function goTo(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});}
+  </script>
+  <script src="main.js" defer></script>
+</body>
+</html>
